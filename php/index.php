@@ -27,10 +27,10 @@ if(isset($_POST['log'])) {
                 exit();
             }
         } else {
-            echo "Username or password is incorrect";  // Password does not match
+            echo'<script>alert("Username or password is incorrect"); </script>';  // Password does not match
         }
     } else {
-        echo "Username or password is incorrect";  // Username does not exist
+        echo'<script>alert("Username or password is incorrect"); </script>';  // Username does not exist
     }
 }
 ?>
