@@ -3,9 +3,12 @@ session_start();
 if(!isset($_SESSION["username"]))
 {
 
-    header("location:index.php");
+    header("location:login.php");
 }
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
