@@ -11,11 +11,11 @@ $query=" INSERT INTO `user` (`fullname`, `username`, `password`, `usertype`) VAL
 
 if(mysqli_query($conn,$query)){
 
-header("location: index.php");
+header("location: login.php");
 }
 
 else{
-    echo"not registered successfully";
+    echo'<script>alert("signup unsuccessful");</script>';
 }
 }
 ?>
@@ -42,9 +42,6 @@ else{
         <br>
         <button type="submit" value="register" name="register" >Signup</button>
     </form>
-    <p>Already have an account? <a href="index.php">Login here</a></p>
+    <p>Already have an account? <a href="login.php">Login here</a></p>
 </body>
 </html>
-
-<!-- INSERT INTO `user` (`user_id`, `fullname`, `username`, `password`, `usertype`) VALUES (NULL, 'yuwa shrestha', 'yuwa', '123', 'user'); -->
-<!-- INSERT INTO `user` (`user_id`, `fullname`, `username`, `password`, `usertype`) VALUES (NULL, 'admin', 'admin', 'admin123', 'admin'); -->
