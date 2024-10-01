@@ -6,7 +6,7 @@ session_start();
 if(isset($_POST['log'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    
+    $_SESSION["username"]=$username;
     // Query to select based on username only
     $query = "SELECT * FROM user WHERE username='$username'";
     $run = mysqli_query($conn, $query);
@@ -19,7 +19,6 @@ if(isset($_POST['log'])) {
         if($row['password'] == $password) {  // This is not secure; ideally, use password_verify()
             // Redirect based on usertype
             if($row['usertype'] == "user") {
-                $_SESSION["username"]=$username;
                 header("location: user.php");
                 exit();  // It's good practice to exit after header redirection
             } elseif($row['usertype'] == "admin") {
