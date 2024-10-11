@@ -144,6 +144,6 @@ select{
 }
 .logout_button:hover{
     background-color: white;
-    color: #000;
+    color: #3d3c3c;
     transition-duration: .5s;
 }
