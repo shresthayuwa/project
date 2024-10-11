@@ -1,6 +1,149 @@
+
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
 .welcome-board{
+    height: 70px;
     display: flex;
-    background-color: red;
+    background-color: #51c8e6;
     justify-content: space-between;
     align-items: center;
+    color: white;
+    padding:  0px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image:url(../images/Man\ buying\ bus\ ticket\ via\ terminal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+legend{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+.admin_ticket_selector{
+    width: 100%;
+    padding: 10px;
+    background-color: #51c8e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.admin_ticket_selector:hover { 
+    background-color: #2b8b9c; 
+} 
+
+a { 
+    color: #3498db; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+select{
+    padding: 5px;
+}
+
+.pop_count{
+    width: 290px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    border: black solid 1mm;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border-radius: 10px
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.info{
+    display: flex;
+}
+
+.pop_count_button{
+    margin-top: 10px;
+    padding: 9px 25px;
+    background-color: #51c8e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pop_count_button:hover{
+    background-color: #2b8b9c;
+}
+
+.logout_button{
+    padding: 7px 25px;
+    border: none;
+    background-color: #198ea3;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+    cursor: pointer;
+}
+.logout_button:hover{
+    background-color: white;
+    color: #000;
+    transition-duration: .5s;
 }
