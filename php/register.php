@@ -40,8 +40,9 @@ else{
         <input type="password" name="password" id="password" placeholder="Password" required>
         <br>
         <br>
-        <button type="submit" value="register" name="register" >Signup</button>
+        <button type="submit" value="register" name="register" class="button" >Signup</button>
     </form>
     <p>Already have an account? <a href="login.php">Login here</a></p>
 </body>
 </html>
+
