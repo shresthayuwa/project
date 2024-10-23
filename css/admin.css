@@ -1,0 +1,207 @@
+/*--- General Reset and Body Styles --------------------------------------------- */
+body {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Titillium Web", Arial, Helvetica;
+}
+
+/*--- Wrapper --------------------------------------------- */
+.wrapper {
+   width: 98%;
+   margin: 0 auto;
+}
+
+/*--- Header --------------------------------------------- */
+.header {
+   width: 100%;
+   height: 50px;
+}
+
+.logo {
+   padding-left: 10px;
+   padding-top: 10px;
+   float: left;
+}
+
+.logo a {
+   text-decoration: none;
+   color: #51c8e6;
+   font-size: 50px;
+   font-family: Freestyle Script;
+}
+
+/*--- Navbar --------------------------------------------- */
+.nav {
+   background-color: #51c8e6;
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav h1 {
+   margin: 0;
+   padding: 0;
+   padding: 13px 20px;
+   float: left;
+   color: #fff;
+   font-size: 20px;
+}
+
+.nav2 ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   float: right;
+}
+
+.nav2 ul li {
+   display: inline;
+}
+
+.nav ul li a {
+   background-color: #198ea3;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   text-decoration: none;
+   padding: 16px 20px;
+   float: left;
+   font-weight: bold;
+   margin: 0px 5px;
+}
+
+.nav2 ul li a:hover {
+   background-color: white;
+   color: #3d3c3c;
+   transition-duration: .5s;
+}
+
+.clear {
+   clear: both;
+}
+
+/*--- Footer --------------------------------------------- */
+.footer {
+   width: 100%;
+   height: 50px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: #51c8e6;
+}
+
+.footer p {
+   margin: 0;
+   padding: 0;
+   color: #fff;
+   text-align: center;
+   font-size: 20px;
+}
+
+legend {
+   text-align: center;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 30px;
+   margin-bottom: 20px;
+   color: #3498db;
+}
+
+form {
+   width: 300px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+}
+
+input {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+label {
+   display: block;
+   font-weight: bold;
+}
+
+.admin_ticket_selector {
+   width: 100%;
+   padding: 10px;
+   background-color: #51c8e6;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.admin_ticket_selector:hover {
+   background-color: #2b8b9c;
+}
+
+select {
+   margin-top: 10px;
+   padding: 5px;
+   width: 100%;
+}
+
+/*--- Pop Count Styles ----------------------------------- */
+.pop_count {
+   padding: 0px 10px;
+   height: 280px;
+   display: flex;
+   flex-direction: column;
+   border: black solid 1mm;
+   align-items: center;
+   justify-content: center;
+   margin: 10px; /* Adds spacing around each item */
+   border-radius: 10px;
+   flex: 1 1 30%; /* Allow items to grow, shrink, and take up about 30% of the width */
+}
+
+.pop_count h2{
+   text-align: center;
+}
+
+
+/*--- Container for Info Section ----------------------- */
+.container {
+   display: flex;
+   justify-content: space-between;
+   padding: 30px;
+}
+
+.info {
+   display: grid; /* Use CSS Grid */
+   grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+   gap: 20px; /* Space between the grid items */
+}
+
+.pop_count_button {
+   margin-top: 10px;
+   padding: 9px 25px;
+   background-color: #51c8e6;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.pop_count_button:hover {
+   background-color: #2b8b9c;
+}
+
+.l_button {
+   height: 6px;
+   display: flex;
+   align-items: center;
+}
